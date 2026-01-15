@@ -17,8 +17,8 @@ export class GameMap extends GameObject {
         this.walls = [];
 
         this.snakes = [
-            new Snake({ id: 0, color: "#FEFEFE", r: this.rows - 2, c: 1 }, this),
-            new Snake({ id: 1, color: "#D7A787", r: 1, c: this.cols - 2 }, this)
+            new Snake({ id: 0, color: "#f3437b", r: this.rows - 2, c: 1 }, this),
+            new Snake({ id: 1, color: "#5261e9", r: 1, c: this.cols - 2 }, this)
         ]
     }
 
