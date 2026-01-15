@@ -1,6 +1,6 @@
 <template>
     <div ref="parent" class="gamemap">
-        <canvas ref="canvas">
+        <canvas ref="canvas" tabindex="0">
              
         </canvas>
     </div>
@@ -8,7 +8,7 @@
 
 <script>
 import { GameMap } from '@/assets/scripts/GameMap.js';
-import { ref,  onMounted} from 'vue';
+import { ref,  onMounted } from 'vue';
 
 export default {
     setup() {
