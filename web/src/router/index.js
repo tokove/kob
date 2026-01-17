@@ -2,8 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import PkIndexView from '@/views/pk/PkIndexView.vue'
 import RanklistIndexView from '@/views/ranklist/RanklistIndexView.vue'
 import RecordIndexView from '@/views/record/RecordIndexView.vue'
-import UserBotIndexView from '@/views/user/bot/UserBotIndexView.vue'  
+import UserBotIndexView from '@/views/user/bot/UserBotIndexView.vue'
 import NotFound from '@/views/error/NotFound.vue'
+import UserAccountRegisterView from '@/views/user/account/UserAccountRegisterView.vue'
+import UserAccountLoginView from '@/views/user/account/UserAccountLoginView.vue'
 
 const routes = [
   {
@@ -30,6 +32,16 @@ const routes = [
     path: "/user/bot/",
     name: "user_bot_index",
     component: UserBotIndexView
+  },
+  {
+    path: "/user/account/register/",
+    name: "user_account_register",
+    component: UserAccountRegisterView
+  },
+  {
+    path: "/user/account/login/",
+    name: "user_account_login",
+    component: UserAccountLoginView
   },
   {
     path: "/404/",

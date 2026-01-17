@@ -1,27 +1,27 @@
 package com.kob.backend.service.impl.utils;
 
-import com.kob.backend.mapper.UserMapper;
 import com.kob.backend.pojo.User;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.List;
+import java.util.Collections;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class UserDetailsImpl implements UserDetails {
 
-    private User user;
+    private final User user;
+
+    public UserDetailsImpl(User user) {
+        this.user = user;
+    }
+
+    public User getUser() {
+        return user;
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of();
+        return Collections.emptyList();
     }
 
     @Override

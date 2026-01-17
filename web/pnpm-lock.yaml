@@ -17,6 +17,9 @@ importers:
       jquery:
         specifier: ^3.7.1
         version: 3.7.1
+      properties:
+        specifier: ^1.2.1
+        version: 1.2.1
       vue:
         specifier: ^3.2.13
         version: 3.5.26
@@ -3051,6 +3054,10 @@ packages:
   progress@2.0.3:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
     engines: {node: '>=0.4.0'}
+
+  properties@1.2.1:
+    resolution: {integrity: sha512-qYNxyMj1JeW54i/EWEFsM1cVwxJbtgPp8+0Wg9XjNaK6VE/c4oRi6PNu5p7w1mNXEIQIjV5Wwn8v8Gz82/QzdQ==}
+    engines: {node: '>=0.10'}
 
   proxy-addr@2.0.7:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
@@ -7141,6 +7148,8 @@ snapshots:
       webpack: 5.104.1
 
   progress@2.0.3: {}
+
+  properties@1.2.1: {}
 
   proxy-addr@2.0.7:
     dependencies:
