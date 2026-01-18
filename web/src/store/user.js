@@ -5,7 +5,7 @@ export default {
         id: "",
         username: "",
         photo: "",
-        token: "",
+        token: localStorage.getItem("jwt_token") || "",
         is_login: false,
         pulling_info: true,
     },
@@ -43,6 +43,7 @@ export default {
                     password: data.password,
                 }),
                 success(resp) {
+                    
                     if (resp.error_message === "success") {
                         localStorage.setItem("jwt_token", resp.token);
                         context.commit("updateToken", resp.token);

@@ -43,6 +43,7 @@
 </template>
 
 <script>
+
 import { useRoute } from 'vue-router';
 import { computed } from 'vue';
 import { useStore } from 'vuex';
@@ -52,7 +53,6 @@ export default {
     const store = useStore();
     const route = useRoute();
     const route_name = computed(() => route.name);
-
     const logout = () => {
       store.dispatch("logout");
     }
